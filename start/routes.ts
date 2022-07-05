@@ -23,3 +23,4 @@ import Route from '@ioc:Adonis/Core/Route'
 
 
 Route.get('/', "BlogsController.index").as("home")
+Route.get('/article/:id', "BlogsController.show").as("post.show")

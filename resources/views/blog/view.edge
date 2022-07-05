@@ -7,7 +7,14 @@
 
 <form action="" method="post" enctype="multipart/form-data">
 
-  <input type="text">
+  <div class="form-group">
+    <label for=""></label>
+    <input type="text" name="title" value="{{ post.title }}">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Sauvegarder</button>
+
+
 </form>
 
 @endsection

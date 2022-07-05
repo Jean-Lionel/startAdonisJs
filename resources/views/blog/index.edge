@@ -16,7 +16,7 @@
     @each(post in posts)
     <li>
       <div class="d-flex justify-content-between align-items-center">
-        <a href="#">
+        <a href="{{ route('post.show',{id: post.id}) }}">
           {{ post.title }}
         </a>
       </div>

@@ -12,7 +12,7 @@ export default class BlogsController {
     })
   }
 
-  async view({ params, view }: HttpContextContract) {
+  async show({ params, view }: HttpContextContract) {
 
     const post = await Post.findOrFail(params.id)
 
