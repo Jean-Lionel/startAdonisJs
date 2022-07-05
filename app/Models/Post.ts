@@ -6,7 +6,7 @@ export default class Post extends BaseModel {
   public id: number
 
   @column.dateTime({ autoCreate: true })
-  public createdAt: DateTime
+  public createdAt: DateTime|null
 
   @column()
   public title: string
@@ -19,5 +19,5 @@ export default class Post extends BaseModel {
   public thumbnail: string | null
 
   @column.dateTime({ autoCreate: true, autoUpdate: true })
-  public updatedAt: DateTime
+  public updatedAt: DateTime | null
 }
